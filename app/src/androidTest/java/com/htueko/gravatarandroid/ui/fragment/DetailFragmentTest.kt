@@ -1,9 +1,10 @@
 package com.htueko.gravatarandroid.ui.fragment
 
 import android.os.Bundle
-import androidx.test.espresso.Espresso
-import androidx.test.espresso.assertion.ViewAssertions
-import androidx.test.espresso.matcher.ViewMatchers
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import com.htueko.gravatarandroid.R
@@ -39,20 +40,20 @@ class DetailFragmentTest {
         // launch the Detail Fragment
         launchFragmentInHiltContainer<DetailFragment>(Bundle(), R.style.Theme_GravatarAndroid) {}
         // check the Detail Fragment is displayed
-        Espresso.onView(ViewMatchers.withId(R.id.fragment_detail))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        onView(withId(R.id.fragment_detail))
+            .check(matches(isDisplayed()))
         // check the Avatar ImageView is displayed
-        Espresso.onView(ViewMatchers.withId(R.id.imv_avatar_detail))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        onView(withId(R.id.imv_avatar_detail))
+            .check(matches(isDisplayed()))
         // check the Name text view is displayed
-        Espresso.onView(ViewMatchers.withId(R.id.tv_name_detail))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        onView(withId(R.id.tv_name_detail))
+            .check(matches(isDisplayed()))
         // check the Status text view is displayed
-        Espresso.onView(ViewMatchers.withId(R.id.tv_status_detail))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        onView(withId(R.id.tv_status_detail))
+            .check(matches(isDisplayed()))
         // check the Email text view is displayed
-        Espresso.onView(ViewMatchers.withId(R.id.tv_email_detail))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        onView(withId(R.id.tv_email_detail))
+            .check(matches(isDisplayed()))
 
     }
 
