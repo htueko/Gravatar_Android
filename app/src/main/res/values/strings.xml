@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Gravatar Android</string>
+    <string name="placeholder_name">John Doe</string>
+    <string name="placeholder_status">Online</string>
+    <string name="placeholder_email">johndoe@abc.com</string>
+    <string name="text_status">Status</string>
+    <string name="text_gravatar">Gravatar</string>
+    <string name="text_simulate_change">Simulate Change</string>
+    <string name="text_something_went_wrong">Something went wrong!</string>
+    <string name="text_online">Online</string>
+    <string name="text_offline">Offline</string>
 </resources>

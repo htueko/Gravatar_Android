@@ -21,6 +21,10 @@ android {
         testInstrumentationRunner "com.htueko.gravatarandroid.CustomTestRunner"
     }
 
+    buildFeatures {
+        viewBinding true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
