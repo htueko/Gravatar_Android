@@ -21,6 +21,11 @@ android {
         testInstrumentationRunner "com.htueko.gravatarandroid.CustomTestRunner"
     }
 
+    sourceSets {
+        androidTest.java.srcDirs += "src/shareTest/java"
+        test.java.srcDirs += "src/shareTest/java"
+    }
+
     buildFeatures {
         viewBinding true
     }
